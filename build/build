@@ -1,0 +1,5 @@
+docker build -t build .
+#mkdir -p ../output
+#output_dir="$(pwd)/../output/"
+#docker run -v "$(readlink -f "$(pwd)/../output/")r:/build/output/:rw" build
+docker run -v $(which docker):$(which docker) -v /var/run/docker.sock:/var/run/docker.sock build
