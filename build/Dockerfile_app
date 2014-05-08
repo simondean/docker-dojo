@@ -1,0 +1,5 @@
+FROM java
+ADD output/app/ /opt/app/
+WORKDIR /opt/app/
+ENTRYPOINT bin/helloworld
+EXPOSE 9000

@@ -1,1 +1,1 @@
-docker run play-sample-app
+docker run -P play-sample-app

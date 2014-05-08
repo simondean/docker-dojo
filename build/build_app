@@ -1,0 +1,1 @@
+../../../play dist && mkdir -p output/app/ && unzip -d output/app/ -q target/universal/helloworld-*.zip && mv output/app/helloworld*/* output/app/ && rmdir output/app/helloworld*/ && docker build -t play-sample-app .
